@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topcontainer{
+    display: grid;
+grid-template-rows: 1fr 2fr;
+}
+.bigcontainer{
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr)); */
+    /* grid-template-areas: "first-column second-column third-column"; */
+    margin: auto;
+    align-items: center;
+}
+
+.bigcontainer .first-column{
+    width: 800px;
+/* margin-left: 150px; */
+align-items: center;
+text-align: center;
+height: 100px;
+background-color: white;
+margin-top: -90px;
+border-radius: 20px;
+border: 0.5px solid rgb(155, 152, 152);
+background-color: #CED4DA;
+
+
+}
+
+.bigcontainer .first-column ul .first-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.bigcontainer .first-column ul .first-container:hover{
+    color: white;
+    background-color: black/0;
+}
+.bigcontainer .first-column img{
+    width: 70px;
+    height: 70px;
+    padding-top: 40px;
+    
+}
+.bigcontainer .first-column ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.bigcontainer .first-column ul div{
+    color: black;
+    opacity: 0.5;
+}  
+
+.bigcontainer .first-column ul div a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+.bigcontainer .first-column ul div a li{
+    list-style: none;
+}
+
+.bigcontainer .first-column ul div li{
+    list-style: none;
+}
+
+.bigcontainer .first-column ul div a:hover div{
+    color: black;
+    opacity: 1;
+}
+
+body{
+    /* background: #222; */
+}
+
+.top-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background-color: #CED4DA;
+    /* background: linear-gradient(135deg, #00feba, #5b548a); */
+    color: #fff;
+    /* margin: 20px auto 0px; */
+    margin: auto;
+     /* margin-right: 500px; */
+    margin-top: -100px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.card .search{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.card .search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 16px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.search button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.search button img{
+width: 36px;
+
+
+}
+
+.weather-icon{
+    width: 200px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+@media screen and (max-width: 800px) {
+    .bigcontainer .first-column{
+        width: 400px;
+
+    }
+    .card{
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .card .search input{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 10px 10px;
+        /* height: 60px;
+        border-radius: 30px;
+        margin-right: 16px;
+        font-size: 18px;
+        flex: 1; */
+    }
+    
+    .search button{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    .bigcontainer .first-column ul div li a{
+        display: none;
+    }
+}

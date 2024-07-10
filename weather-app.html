@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather-app.css">
+</head>
+<body>
+    <div class="topcontainer">
+<div class="bigcontainer">
+    
+    <div class="first-column">
+        <img src="images/umbrella4.png" alt="">
+        <ul>
+            <div class="weather">
+            <a href="weather-app.html"><li><i class="fa-solid fa-cloud"></i></li></a>
+            <li><a href="weather-app.html">Weather</a></li>
+        </div>
+        <div class="cities">
+            <a href="city.html"><li><i class="fa-solid fa-city"></i></li></a>
+            <li><a href="city.html">Cities</a></li>
+        </div>
+        <div class="map">
+            <a href="#"><li><i class="fa-solid fa-map"></i></li></a>
+            <li><a href="#">Map</a></li>
+        </div>
+        <div class="settings">
+            <a href="#"><li><i class="fa-solid fa-map"></i></li></a>
+            <li><a href="#">Settings</a></li>
+        </div>
+
+        </ul>
+    </div>
+
+    
+
+
+    <div class="second-column">
+        <input type="search" name="search" id="search" placeholder="search for cities" ondblclick="press()">
+        <i class="fa-solid fa-magnifying-glass" id="searchbtn"></i>
+        <div class="title">
+         <div class="city">
+        <h1 class="place">Madrid</h1>
+        <p class="para1">Chance of rain: 0%</p>
+        <p class="para2">31°</p>
+         </div>
+    <div class="sun">
+         <img src="images/clear.png" alt="" style="position: relative; right: 50px;" class="weather-icon">
+        </div>
+    </div>
+
+    <div class="middle-section">
+        <h6>TODAY'S FORCAST</h6>
+        <div class="hourly-forcast">
+            <div class="forcast1">
+                <div class="time1">6:00AM</div>
+                <div class="image1"><img src="images/clouds.png" alt=""></div>
+                <div class="degree1">25°</div>
+            </div>
+            <div class="forcast2">
+                <div class="time2">9:00 AM</div>
+                <div class="image2"><img src="images/clouds.png" alt=""></div>
+                <div class="degree2">28°</div>
+            </div>
+            <div class="forcast3" >
+                <div class="time3">12:00 PM</div>
+                <div class="image3"><img src="images/clear.png" alt=""></div>
+                <div class="degree3">33°</div>
+            </div>
+            <div class="forcast4">
+                <div class="time4">3:00 PM</div>
+                <div class="image4"><img src="images/clear.png" alt=""></div>
+                <div class="degree4">34°</div>
+            </div>
+            <div class="forcast5">
+                <div class="time5">6:00 PM</div>
+                <div class="image5"><img src="images/mist.png" alt=""></div>
+                <div class="degree5">32°</div>
+            </div>
+            <div class="forcast6">
+                <div class="time6">9:00 PM</div>
+                <div class="image6"><img src="images/drizzle.png" alt=""></div>
+                <div class="degree6">30°</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="forcast-conditions">
+        <h6>AIR CONDITIONS</h6>
+    <div class="condition">
+    <div class="information">
+        <div class="info1">
+            <p><i class="fa-solid fa-spray-can"></i> Real Feel</p>
+            <p><b>30°</b></p>
+        </div>
+        <div class="info2">
+            <p><i class="fa-solid fa-droplet"></i> Chance of rain</p>
+            <p><b>0%</b></p>
+        </div>
+    </div>
+
+
+    <div class="information">
+        <div class="info1">
+    <p><i class="fa-solid fa-wind"></i> Wind</p>
+    <p class="wind"><b>0.2 km/hr</b></p>
+ </div>
+
+ <div class="info2">
+    <p><i class="fa-solid fa-sun"></i> UV index</p>
+    <p><b>3</b></p>
+ </div>
+</div>
+
+<button type="button" id="seemore">See More</button>
+
+    </div>
+    </div>
+</div>
+
+    <div id="third-column">
+        <p>7 day Forecast</p>
+        <div class="week-forcast">
+            
+            <div class="first">
+                <div class="today">Today</div>
+                <div class="sunny">
+                    <img src="images/clear.png" alt="" width="60" height="60" style="position: relative; top: -20px;">
+                    <p><b>Sunny</b></p>
+                </div>
+                <div class="number">
+                    <p><b>36</b>/22</p>
+                </div>
+            </div>
+
+        <div class="second">
+            <div class="today">Tues</div>
+                <div class="sunny">
+                    <img src="images/clear.png" alt="" width="60" height="60" style="position: relative; top: -20px;">
+                    <p><b>Sunny</b></p>
+                </div>
+                <div class="number">
+                    <p><b>37</b>/21</p>
+                </div>
+        </div>
+
+
+
+        <div class="third">
+            <div class="today">Wed</div>
+                <div class="sunny">
+                    <img src="images/clear.png" alt="" width="60" height="60" style="position: relative; top: -20px;">
+                    <p><b>Sunny</b></p>
+                </div>
+                <div class="number">
+                    <p><b>37</b>/21</p>
+                </div>
+        </div>
+
+        <div class="fourth">
+            <div class="today">Thurs</div>
+                <div class="sunny">
+                    <img src="images/clouds.png" alt="" width="60" height="60" style="position: relative; top: -20px;">
+                    <p><b>Cloudy</b></p>
+                </div>
+                <div class="number">
+                    <p><b>37</b>/21</p>
+                </div>
+        </div>
+
+
+        <div class="fifth">
+            <div class="today">Fri</div>
+                <div class="sunny">
+                    <img src="images/clouds.png" alt="" width="60" height="60" style="position: relative; top: -20px;">
+                    <p><b>Cloudy</b></p>
+                </div>
+                <div class="number">
+                    <p><b>37</b>/21</p>
+                </div>
+        </div>
+
+
+        <div class="sixth">
+            <div class="today">Sat</div>
+                <div class="sunny">
+                    <img src="images/drizzle.png" alt="" width="60" height="60" style="position: relative; top: -20px;">
+                    <p><b>Rainy</b></p>
+                </div>
+                <div class="number">
+                    <p><b>37</b>/21</p>
+                </div>
+        </div>
+
+
+
+        <div class="seventh">
+            <div class="today">Sat</div>
+                <div class="sunny">
+                    <img src="images/clear.png" alt="" width="60" height="60" style="position: relative; top: -20px;">
+                    <p><b>Sunny</b></p>
+                </div>
+                <div class="number">
+                    <p><b>37</b>/21</p>
+                </div>
+        </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+</div>
+<script src="https://kit.fontawesome.com/b6a2455e06.js" crossorigin="anonymous"></script>
+    <script src="weather-app.js"></script>
+</body>
+</html>
