@@ -244,9 +244,7 @@ h1 {
   min-height: 500px;
   position: relative;
   background-position-x: -30px;
-  margin-top: 100px;
-;
-  padding: 20px;
+  
 
 }
 
@@ -372,13 +370,13 @@ div#txt {
 }
 
 
-.forecast{
+/* .forecast{
   width: 30%;
   height: 100%;
   padding: 15px;
   margin-top: 100px;
   background-color: rgba(24, 23, 23, 0.697);
-}
+} */
 
 /*-- //Index-Page-Styling --*/
 
@@ -522,19 +520,7 @@ div#txt {
   h1 {
     font-size: 33px;
   }
-  .city{
-    margin: auto;
-  }
 
-  .forecast{
-    margin: auto;
-  }
-
-
-  .container{
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media screen and (max-width: 480px) {
