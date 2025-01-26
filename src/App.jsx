@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CurrentLocation from "./currentLocation";
+import CurrentLocation from "./CurrentLocation";
 import "./App.css";
 
 const App = () => {
